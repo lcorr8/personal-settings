@@ -1,5 +1,9 @@
 
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+#a function to kill processes on a given port 
+killport() {
+ kill -9 $(lsof -t -i:$1)
+}
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
