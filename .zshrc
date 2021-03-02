@@ -129,3 +129,6 @@ export PATH="$HOME/.serverless/bin:$PATH"
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+
+# show the time at the start of the prompt 
+export PROMPT="%F{242}%*%{$reset_color%} ${PROMPT}"
